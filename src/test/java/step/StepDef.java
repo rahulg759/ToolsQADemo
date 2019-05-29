@@ -52,7 +52,7 @@ public class StepDef extends BaseTest {
 			button = driver.findElement(By.xpath(or.getProperty("selectBtn")));
 			button.click();
 		} else if (menuBtn.equals("Resizable")) {
-			button = driver.findElement(By.xpath(or.getProperty("selectBtn")));
+			button = driver.findElement(By.xpath(or.getProperty("resizableBtn")));
 			button.click();
 		} else {
 			System.out.println("Title is not matched");
@@ -86,7 +86,7 @@ public class StepDef extends BaseTest {
 
 	@Then("^user click on the \"([^\"]*)\" of \"([^\"]*)\"$")
 	public void user_click_on_the_of(String item, String page) {
-		a=new Actions(driver);
+		a = new Actions(driver);
 		if (page.equals("Sortable")) {
 			source = driver.findElement(By.xpath(or.getProperty("selectItem1")));
 			to = driver.findElement(By.xpath(or.getProperty("selectItem7")));
@@ -99,7 +99,6 @@ public class StepDef extends BaseTest {
 			System.out.println("background color is : " + color);
 		} else if (page.equals("Resizable")) {
 			element = driver.findElement(By.cssSelector(or.getProperty("resizeBtn")));
-
 			a.clickAndHold(element).moveByOffset(50, 50).build().perform();
 		}
 	}
