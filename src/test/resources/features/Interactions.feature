@@ -24,4 +24,18 @@ Scenario: User is click on the Resizable menu
 	When when user click on "Resizable" 
 	Then user navigate to the page as "Resizable" 
 	And user click on the "item1" of "Resizable" 
+	And user close the browser 
+	
+Scenario: User is click on the Resizable menu 
+	Given user is already on homepage as "Home" 
+	When when user click on "Droppable" 
+	Then user navigate to the page as "Droppable" 
+	And user click on the "item1" of "Droppable" 
+	And user close the browser 
+	
+Scenario: User is click on the Resizable menu 
+	Given user is already on homepage as "Home" 
+	When when user click on "Draggable" 
+	Then user navigate to the page as "Draggable" 
+	And user click on the "item1" of "Draggable" 
 	And user close the browser

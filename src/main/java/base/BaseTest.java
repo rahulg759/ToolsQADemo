@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -20,18 +21,20 @@ public class BaseTest {
 	public static String path = System.getProperty("user.dir");
 	public static FileInputStream file;
 	public static String browser = null;
+	public static Logger log = Logger.getLogger("devpinoyLogger");
 
 	public BaseTest() {
 		System.out.println("rahul");
 		try {
 			prop = new Properties();
 			file = new FileInputStream(System.getProperty("user.dir") + "\\properties\\config.properties");
+			log.debug("Properties file path !!!");
 		} catch (FileNotFoundException e) {
-			System.out.println("rahul");
 			e.printStackTrace();
 		}
 		try {
 			prop.load(file);
+			log.debug("Properties file loaded !!!");
 		} catch (IOException e) {
 			System.out.println("rahul1");
 			e.printStackTrace();
@@ -39,11 +42,13 @@ public class BaseTest {
 		try {
 			or = new Properties();
 			file = new FileInputStream(System.getProperty("user.dir") + "\\properties\\or.properties");
+			log.debug("Object Repository file path !!!");
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
 		try {
 			or.load(file);
+			log.debug("Object Repository file loaded !!!");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -59,6 +64,7 @@ public class BaseTest {
 		if (browser.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", path + "\\executable\\chromedriver.exe");
 			driver = new ChromeDriver();
+			log.debug("Launch the browser and navigate to toolsQA");
 		} else if (browser.equals("firefox")) {
 			System.setProperty("webdriver.gecko.driver", path + "\\executable\\chromedriver.exe");
 			driver = new FirefoxDriver();

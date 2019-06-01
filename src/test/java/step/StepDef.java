@@ -8,6 +8,8 @@ import base.BaseTest;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import sun.util.logging.resources.logging;
+import util.TestUtil;
 
 public class StepDef extends BaseTest {
 
@@ -18,7 +20,6 @@ public class StepDef extends BaseTest {
 
 	@Given("^User navigates to the homepage$")
 	public void user_navigates_to_the_homepage() {
-		System.out.println("gjfdgdfk");
 		initialization();
 	}
 
@@ -54,6 +55,12 @@ public class StepDef extends BaseTest {
 		} else if (menuBtn.equals("Resizable")) {
 			button = driver.findElement(By.xpath(or.getProperty("resizableBtn")));
 			button.click();
+		} else if (menuBtn.equals("Droppable")) {
+			button = driver.findElement(By.xpath(or.getProperty("dropSidebarBtn")));
+			button.click();
+		} else if (menuBtn.equals("Draggable")) {
+			button = driver.findElement(By.xpath(or.getProperty("dragSidebarBtn")));
+			button.click();
 		} else {
 			System.out.println("Title is not matched");
 		}
@@ -77,21 +84,28 @@ public class StepDef extends BaseTest {
 				title = driver.findElement(By.xpath(or.getProperty("Title")));
 				if (text.equals(title.getText())) {
 					System.out.println("title has matched");
-				} else {
-					System.out.println("title has not matched");
+				} else if (text.equals("Droppable")) {
+					title = driver.findElement(By.xpath(or.getProperty("Title")));
+					if (text.equals(title.getText())) {
+						System.out.println("title has matched");
+					} else if (text.equals("Draggable")) {
+						title = driver.findElement(By.xpath(or.getProperty("Title")));
+						if (text.equals(title.getText())) {
+							System.out.println("title has matched");
+						} else {
+							System.out.println("title has not matched");
+						}
+					}
 				}
 			}
 		}
 	}
 
 	@Then("^user click on the \"([^\"]*)\" of \"([^\"]*)\"$")
-	public void user_click_on_the_of(String item, String page) {
+	public void user_click_on_the_of(String item, String page) throws InterruptedException {
 		a = new Actions(driver);
 		if (page.equals("Sortable")) {
-			source = driver.findElement(By.xpath(or.getProperty("selectItem1")));
-			to = driver.findElement(By.xpath(or.getProperty("selectItem7")));
-			// a = new Actions(driver);
-			a.dragAndDrop(source, to).build().perform();
+			TestUtil.sortingList();
 		} else if (page.equals("Selectable")) {
 			element = driver.findElement(By.xpath(or.getProperty("selectItem1")));
 			element.click();
@@ -99,7 +113,22 @@ public class StepDef extends BaseTest {
 			System.out.println("background color is : " + color);
 		} else if (page.equals("Resizable")) {
 			element = driver.findElement(By.cssSelector(or.getProperty("resizeBtn")));
+			a.clickAndHold(element).moveByOffset(100, 100).build().perform();
+		} else if (page.equals("Draggable")) {
+			element = driver.findElement(By.xpath(or.getProperty("dropBtn")));
 			a.clickAndHold(element).moveByOffset(50, 50).build().perform();
+		} else if (page.equals("Droppable")) {
+			source = driver.findElement(By.xpath(or.getProperty("dragBtn")));
+			to = driver.findElement(By.xpath(or.getProperty("dropBtn")));
+			TestUtil.waitFor();
+			a.dragAndDrop(source, to).perform();
+			try {
+				TestUtil.waitFor();
+			} catch (InterruptedException e) {
+				e.printStackTrace();
+			}
+		} else {
+			System.out.println("Test is not matched");
 		}
 	}
 
@@ -111,6 +140,7 @@ public class StepDef extends BaseTest {
 	@Then("^user close the browser$")
 	public void user_close_the_browser() {
 		driver.close();
+		driver.quit();
 	}
 
 }
