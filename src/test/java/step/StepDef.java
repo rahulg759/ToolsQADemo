@@ -107,7 +107,7 @@ public class StepDef extends BaseTest {
 		if (page.equals("Sortable")) {
 			TestUtil.sortingList();
 		} else if (page.equals("Selectable")) {
-			element = driver.findElement(By.xpath(or.getProperty("selectItem1")));
+			element = driver.findElement(By.xpath(or.getProperty(item)));
 			element.click();
 			String color = element.getCssValue("background-color");
 			System.out.println("background color is : " + color);
@@ -115,26 +115,16 @@ public class StepDef extends BaseTest {
 			element = driver.findElement(By.cssSelector(or.getProperty("resizeBtn")));
 			a.clickAndHold(element).moveByOffset(100, 100).build().perform();
 		} else if (page.equals("Draggable")) {
-			element = driver.findElement(By.xpath(or.getProperty("dropBtn")));
-			a.clickAndHold(element).moveByOffset(50, 50).build().perform();
+			element = driver.findElement(By.xpath(or.getProperty("dragBtn")));
+			a.clickAndHold(element).moveByOffset(100, 100).build().perform();
 		} else if (page.equals("Droppable")) {
 			source = driver.findElement(By.xpath(or.getProperty("dragBtn")));
 			to = driver.findElement(By.xpath(or.getProperty("dropBtn")));
 			TestUtil.waitFor();
 			a.dragAndDrop(source, to).perform();
-			try {
-				TestUtil.waitFor();
-			} catch (InterruptedException e) {
-				e.printStackTrace();
-			}
 		} else {
 			System.out.println("Test is not matched");
 		}
-	}
-
-	@Then("^user move the current item under \"([^\"]*)\"$")
-	public void user_move_the_current_item_under(String arg1) {
-
 	}
 
 	@Then("^user close the browser$")

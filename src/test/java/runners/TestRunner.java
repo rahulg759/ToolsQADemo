@@ -4,6 +4,7 @@ import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 import gherkin.formatter.model.Feature;
 
 @RunWith(Cucumber.class)
@@ -15,6 +16,6 @@ format = { "pretty", "html:test-outout", "json:json_output/cucumber.json","junit
 		dryRun = false // to check the mapping is proper between feature file and step def file
 )
 
-public class TestRunner {
+public class TestRunner extends AbstractTestNGCucumberTests{
 
 }

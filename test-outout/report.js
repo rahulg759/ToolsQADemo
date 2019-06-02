@@ -27,7 +27,7 @@ formatter.match({
   "location": "StepDef.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "duration": 10137687570,
+  "duration": 11209852243,
   "status": "passed"
 });
 formatter.match({
@@ -40,7 +40,7 @@ formatter.match({
   "location": "StepDef.user_validate_to_the_home_title(String)"
 });
 formatter.result({
-  "duration": 16657631,
+  "duration": 19357576,
   "status": "passed"
 });
 formatter.scenario({
@@ -73,11 +73,6 @@ formatter.step({
 });
 formatter.step({
   "line": 12,
-  "name": "user move the current item under \"item2\"",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 13,
   "name": "user close the browser",
   "keyword": "And "
 });
@@ -91,7 +86,7 @@ formatter.match({
   "location": "StepDef.user_is_already_on_homepage_as(String)"
 });
 formatter.result({
-  "duration": 56029282,
+  "duration": 79020350,
   "status": "passed"
 });
 formatter.match({
@@ -104,7 +99,7 @@ formatter.match({
   "location": "StepDef.when_user_click_on(String)"
 });
 formatter.result({
-  "duration": 2313714826,
+  "duration": 3705674039,
   "status": "passed"
 });
 formatter.match({
@@ -117,7 +112,7 @@ formatter.match({
   "location": "StepDef.user_navigate_to_the_page_as(String)"
 });
 formatter.result({
-  "duration": 50809159,
+  "duration": 61821138,
   "status": "passed"
 });
 formatter.match({
@@ -134,27 +129,14 @@ formatter.match({
   "location": "StepDef.user_click_on_the_of(String,String)"
 });
 formatter.result({
-  "duration": 1081469986,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "item2",
-      "offset": 34
-    }
-  ],
-  "location": "StepDef.user_move_the_current_item_under(String)"
-});
-formatter.result({
-  "duration": 39253,
+  "duration": 1449588210,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDef.user_close_the_browser()"
 });
 formatter.result({
-  "duration": 2965121432,
+  "duration": 712783442,
   "status": "passed"
 });
 formatter.background({
@@ -178,7 +160,7 @@ formatter.match({
   "location": "StepDef.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "duration": 8899777735,
+  "duration": 7822945330,
   "status": "passed"
 });
 formatter.match({
@@ -191,39 +173,39 @@ formatter.match({
   "location": "StepDef.user_validate_to_the_home_title(String)"
 });
 formatter.result({
-  "duration": 8055464,
+  "duration": 10176281,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 15,
-  "name": "User is click on the Sizable menu",
+  "line": 14,
+  "name": "User is click on the Selectable menu",
   "description": "",
-  "id": "this-is-interaction-testcase;user-is-click-on-the-sizable-menu",
+  "id": "this-is-interaction-testcase;user-is-click-on-the-selectable-menu",
   "type": "scenario",
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 16,
+  "line": 15,
   "name": "user is already on homepage as \"Home\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 17,
+  "line": 16,
   "name": "when user click on \"Selectable\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 18,
+  "line": 17,
   "name": "user navigate to the page as \"Selectable\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 19,
-  "name": "user click on the \"item1\" of \"Selectable\"",
+  "line": 18,
+  "name": "user click on the \"Item4\" of \"Selectable\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 20,
+  "line": 19,
   "name": "user close the browser",
   "keyword": "And "
 });
@@ -237,7 +219,7 @@ formatter.match({
   "location": "StepDef.user_is_already_on_homepage_as(String)"
 });
 formatter.result({
-  "duration": 44561054,
+  "duration": 87517842,
   "status": "passed"
 });
 formatter.match({
@@ -250,7 +232,7 @@ formatter.match({
   "location": "StepDef.when_user_click_on(String)"
 });
 formatter.result({
-  "duration": 2394776350,
+  "duration": 2576672831,
   "status": "passed"
 });
 formatter.match({
@@ -263,13 +245,13 @@ formatter.match({
   "location": "StepDef.user_navigate_to_the_page_as(String)"
 });
 formatter.result({
-  "duration": 33628150,
+  "duration": 50800626,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "item1",
+      "val": "Item4",
       "offset": 19
     },
     {
@@ -280,14 +262,14 @@ formatter.match({
   "location": "StepDef.user_click_on_the_of(String,String)"
 });
 formatter.result({
-  "duration": 67862736,
+  "duration": 119538882,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDef.user_close_the_browser()"
 });
 formatter.result({
-  "duration": 655923013,
+  "duration": 724115136,
   "status": "passed"
 });
 formatter.background({
@@ -311,7 +293,7 @@ formatter.match({
   "location": "StepDef.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "duration": 8587947637,
+  "duration": 8138491978,
   "status": "passed"
 });
 formatter.match({
@@ -324,11 +306,11 @@ formatter.match({
   "location": "StepDef.user_validate_to_the_home_title(String)"
 });
 formatter.result({
-  "duration": 8052620,
+  "duration": 19569772,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 22,
+  "line": 21,
   "name": "User is click on the Resizable menu",
   "description": "",
   "id": "this-is-interaction-testcase;user-is-click-on-the-resizable-menu",
@@ -336,27 +318,27 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 23,
+  "line": 22,
   "name": "user is already on homepage as \"Home\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 24,
+  "line": 23,
   "name": "when user click on \"Resizable\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 25,
+  "line": 24,
   "name": "user navigate to the page as \"Resizable\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 26,
+  "line": 25,
   "name": "user click on the \"item1\" of \"Resizable\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 27,
+  "line": 26,
   "name": "user close the browser",
   "keyword": "And "
 });
@@ -370,7 +352,7 @@ formatter.match({
   "location": "StepDef.user_is_already_on_homepage_as(String)"
 });
 formatter.result({
-  "duration": 43672450,
+  "duration": 86113824,
   "status": "passed"
 });
 formatter.match({
@@ -383,7 +365,7 @@ formatter.match({
   "location": "StepDef.when_user_click_on(String)"
 });
 formatter.result({
-  "duration": 2219106924,
+  "duration": 3693033332,
   "status": "passed"
 });
 formatter.match({
@@ -396,7 +378,7 @@ formatter.match({
   "location": "StepDef.user_navigate_to_the_page_as(String)"
 });
 formatter.result({
-  "duration": 49493,
+  "duration": 77369,
   "status": "passed"
 });
 formatter.match({
@@ -413,14 +395,14 @@ formatter.match({
   "location": "StepDef.user_click_on_the_of(String,String)"
 });
 formatter.result({
-  "duration": 71822770,
+  "duration": 118963735,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDef.user_close_the_browser()"
 });
 formatter.result({
-  "duration": 2865539736,
+  "duration": 699285988,
   "status": "passed"
 });
 formatter.background({
@@ -444,7 +426,7 @@ formatter.match({
   "location": "StepDef.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "duration": 8841973521,
+  "duration": 8922546369,
   "status": "passed"
 });
 formatter.match({
@@ -457,11 +439,11 @@ formatter.match({
   "location": "StepDef.user_validate_to_the_home_title(String)"
 });
 formatter.result({
-  "duration": 10130202,
+  "duration": 17061541,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 29,
+  "line": 28,
   "name": "User is click on the Resizable menu",
   "description": "",
   "id": "this-is-interaction-testcase;user-is-click-on-the-resizable-menu",
@@ -469,27 +451,27 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 30,
+  "line": 29,
   "name": "user is already on homepage as \"Home\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 31,
+  "line": 30,
   "name": "when user click on \"Droppable\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 32,
+  "line": 31,
   "name": "user navigate to the page as \"Droppable\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 33,
+  "line": 32,
   "name": "user click on the \"item1\" of \"Droppable\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 34,
+  "line": 33,
   "name": "user close the browser",
   "keyword": "And "
 });
@@ -503,7 +485,7 @@ formatter.match({
   "location": "StepDef.user_is_already_on_homepage_as(String)"
 });
 formatter.result({
-  "duration": 45978725,
+  "duration": 75953472,
   "status": "passed"
 });
 formatter.match({
@@ -516,7 +498,7 @@ formatter.match({
   "location": "StepDef.when_user_click_on(String)"
 });
 formatter.result({
-  "duration": 2283729839,
+  "duration": 3671402475,
   "status": "passed"
 });
 formatter.match({
@@ -529,7 +511,7 @@ formatter.match({
   "location": "StepDef.user_navigate_to_the_page_as(String)"
 });
 formatter.result({
-  "duration": 66560,
+  "duration": 106951,
   "status": "passed"
 });
 formatter.match({
@@ -546,14 +528,14 @@ formatter.match({
   "location": "StepDef.user_click_on_the_of(String,String)"
 });
 formatter.result({
-  "duration": 10147419549,
+  "duration": 5224722994,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDef.user_close_the_browser()"
 });
 formatter.result({
-  "duration": 652903352,
+  "duration": 702877952,
   "status": "passed"
 });
 formatter.background({
@@ -577,7 +559,7 @@ formatter.match({
   "location": "StepDef.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "duration": 8130104283,
+  "duration": 9529762836,
   "status": "passed"
 });
 formatter.match({
@@ -590,11 +572,11 @@ formatter.match({
   "location": "StepDef.user_validate_to_the_home_title(String)"
 });
 formatter.result({
-  "duration": 8111216,
+  "duration": 14226769,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 36,
+  "line": 35,
   "name": "User is click on the Resizable menu",
   "description": "",
   "id": "this-is-interaction-testcase;user-is-click-on-the-resizable-menu",
@@ -602,27 +584,27 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 37,
+  "line": 36,
   "name": "user is already on homepage as \"Home\"",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 38,
+  "line": 37,
   "name": "when user click on \"Draggable\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 39,
+  "line": 38,
   "name": "user navigate to the page as \"Draggable\"",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 40,
+  "line": 39,
   "name": "user click on the \"item1\" of \"Draggable\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 41,
+  "line": 40,
   "name": "user close the browser",
   "keyword": "And "
 });
@@ -636,7 +618,7 @@ formatter.match({
   "location": "StepDef.user_is_already_on_homepage_as(String)"
 });
 formatter.result({
-  "duration": 41840060,
+  "duration": 74978965,
   "status": "passed"
 });
 formatter.match({
@@ -649,7 +631,7 @@ formatter.match({
   "location": "StepDef.when_user_click_on(String)"
 });
 formatter.result({
-  "duration": 2128298061,
+  "duration": 3524132544,
   "status": "passed"
 });
 formatter.match({
@@ -662,7 +644,7 @@ formatter.match({
   "location": "StepDef.user_navigate_to_the_page_as(String)"
 });
 formatter.result({
-  "duration": 58026,
+  "duration": 201955,
   "status": "passed"
 });
 formatter.match({
@@ -679,14 +661,14 @@ formatter.match({
   "location": "StepDef.user_click_on_the_of(String,String)"
 });
 formatter.result({
-  "duration": 40037554621,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[@id\u003d\"droppable\"]\"}\n  (Session info: chrome\u003d74.0.3729.169)\n  (Driver info: chromedriver\u003d2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-OJ7IS97K\u0027, ip: \u0027192.168.99.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_131\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dXP, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir\u003dC:\\Users\\RAHULG~1\\AppData\\Local\\Temp\\scoped_dir19708_17660}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003d, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d74.0.3729.169, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: e6a9f7a5e1d541bc64e27c055fb49106\n*** Element info: {Using\u003dxpath, value\u003d//*[@id\u003d\"droppable\"]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat step.StepDef.user_click_on_the_of(StepDef.java:118)\r\n\tat ✽.And user click on the \"item1\" of \"Draggable\"(src/test/resources/features/Interactions.feature:40)\r\n",
-  "status": "failed"
+  "duration": 115753496,
+  "status": "passed"
 });
 formatter.match({
   "location": "StepDef.user_close_the_browser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 696039908,
+  "status": "passed"
 });
 });
