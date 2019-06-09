@@ -27,7 +27,7 @@ formatter.match({
   "location": "StepDef.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "duration": 11209852243,
+  "duration": 9463432423,
   "status": "passed"
 });
 formatter.match({
@@ -40,7 +40,7 @@ formatter.match({
   "location": "StepDef.user_validate_to_the_home_title(String)"
 });
 formatter.result({
-  "duration": 19357576,
+  "duration": 20732569,
   "status": "passed"
 });
 formatter.scenario({
@@ -86,7 +86,7 @@ formatter.match({
   "location": "StepDef.user_is_already_on_homepage_as(String)"
 });
 formatter.result({
-  "duration": 79020350,
+  "duration": 93715262,
   "status": "passed"
 });
 formatter.match({
@@ -99,7 +99,7 @@ formatter.match({
   "location": "StepDef.when_user_click_on(String)"
 });
 formatter.result({
-  "duration": 3705674039,
+  "duration": 2342115833,
   "status": "passed"
 });
 formatter.match({
@@ -112,7 +112,7 @@ formatter.match({
   "location": "StepDef.user_navigate_to_the_page_as(String)"
 });
 formatter.result({
-  "duration": 61821138,
+  "duration": 58606884,
   "status": "passed"
 });
 formatter.match({
@@ -129,14 +129,14 @@ formatter.match({
   "location": "StepDef.user_click_on_the_of(String,String)"
 });
 formatter.result({
-  "duration": 1449588210,
+  "duration": 1647114541,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDef.user_close_the_browser()"
 });
 formatter.result({
-  "duration": 712783442,
+  "duration": 712818307,
   "status": "passed"
 });
 formatter.background({
@@ -160,7 +160,7 @@ formatter.match({
   "location": "StepDef.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "duration": 7822945330,
+  "duration": 8723445712,
   "status": "passed"
 });
 formatter.match({
@@ -173,7 +173,7 @@ formatter.match({
   "location": "StepDef.user_validate_to_the_home_title(String)"
 });
 formatter.result({
-  "duration": 10176281,
+  "duration": 41391183,
   "status": "passed"
 });
 formatter.scenario({
@@ -219,7 +219,7 @@ formatter.match({
   "location": "StepDef.user_is_already_on_homepage_as(String)"
 });
 formatter.result({
-  "duration": 87517842,
+  "duration": 104524142,
   "status": "passed"
 });
 formatter.match({
@@ -232,7 +232,7 @@ formatter.match({
   "location": "StepDef.when_user_click_on(String)"
 });
 formatter.result({
-  "duration": 2576672831,
+  "duration": 2423318394,
   "status": "passed"
 });
 formatter.match({
@@ -245,8 +245,9 @@ formatter.match({
   "location": "StepDef.user_navigate_to_the_page_as(String)"
 });
 formatter.result({
-  "duration": 50800626,
-  "status": "passed"
+  "duration": 16184875,
+  "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d75.0.3770.80)\n  (Driver info: chromedriver\u003d2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-OJ7IS97K\u0027, ip: \u0027192.168.99.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_131\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dXP, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir\u003dC:\\Users\\RAHULG~1\\AppData\\Local\\Temp\\scoped_dir18656_9790}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003d, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d75.0.3770.80, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: f9517e3fc38b42f636b17cc2a86a258d\n*** Element info: {Using\u003dxpath, value\u003d//div[@id\u003d\u0027content\u0027]/h1}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:416)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:518)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:408)\r\n\tat step.StepDef.user_navigate_to_the_page_as(StepDef.java:83)\r\n\tat ✽.Then user navigate to the page as \"Selectable\"(src/test/resources/features/Interactions.feature:17)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -262,15 +263,13 @@ formatter.match({
   "location": "StepDef.user_click_on_the_of(String,String)"
 });
 formatter.result({
-  "duration": 119538882,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "StepDef.user_close_the_browser()"
 });
 formatter.result({
-  "duration": 724115136,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
   "line": 3,
@@ -293,8 +292,9 @@ formatter.match({
   "location": "StepDef.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "duration": 8138491978,
-  "status": "passed"
+  "duration": 3949502052,
+  "error_message": "org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status\nfrom disconnected: received Inspector.detached event\n  (Session info: chrome\u003d75.0.3770.80)\n  (Driver info: chromedriver\u003d2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-OJ7IS97K\u0027, ip: \u0027192.168.99.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_131\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dXP, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir\u003dC:\\Users\\RAHULG~1\\AppData\\Local\\Temp\\scoped_dir2560_16846}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003d, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d75.0.3770.80, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 061976825df4db6d9e0ac4550cc0a10f\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:370)\r\n\tat base.BaseTest.initialization(BaseTest.java:81)\r\n\tat step.StepDef.user_navigates_to_the_homepage(StepDef.java:25)\r\n\tat ✽.Given User navigates to the homepage(src/test/resources/features/Interactions.feature:4)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -306,8 +306,7 @@ formatter.match({
   "location": "StepDef.user_validate_to_the_home_title(String)"
 });
 formatter.result({
-  "duration": 19569772,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 21,
@@ -352,8 +351,7 @@ formatter.match({
   "location": "StepDef.user_is_already_on_homepage_as(String)"
 });
 formatter.result({
-  "duration": 86113824,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -365,8 +363,7 @@ formatter.match({
   "location": "StepDef.when_user_click_on(String)"
 });
 formatter.result({
-  "duration": 3693033332,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -378,8 +375,7 @@ formatter.match({
   "location": "StepDef.user_navigate_to_the_page_as(String)"
 });
 formatter.result({
-  "duration": 77369,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -395,15 +391,13 @@ formatter.match({
   "location": "StepDef.user_click_on_the_of(String,String)"
 });
 formatter.result({
-  "duration": 118963735,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "StepDef.user_close_the_browser()"
 });
 formatter.result({
-  "duration": 699285988,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
   "line": 3,
@@ -426,7 +420,7 @@ formatter.match({
   "location": "StepDef.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "duration": 8922546369,
+  "duration": 5861307852,
   "status": "passed"
 });
 formatter.match({
@@ -439,8 +433,9 @@ formatter.match({
   "location": "StepDef.user_validate_to_the_home_title(String)"
 });
 formatter.result({
-  "duration": 17061541,
-  "status": "passed"
+  "duration": 6767496,
+  "error_message": "org.openqa.selenium.NoSuchWindowException: no such window: target window already closed\nfrom unknown error: web view not found\n  (Session info: chrome\u003d75.0.3770.80)\n  (Driver info: chromedriver\u003d2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 0 milliseconds\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-OJ7IS97K\u0027, ip: \u0027192.168.99.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_131\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities [{mobileEmulationEnabled\u003dfalse, hasTouchScreen\u003dfalse, platform\u003dXP, acceptSslCerts\u003dfalse, acceptInsecureCerts\u003dfalse, webStorageEnabled\u003dtrue, browserName\u003dchrome, takesScreenshot\u003dtrue, javascriptEnabled\u003dtrue, platformName\u003dXP, setWindowRect\u003dtrue, unexpectedAlertBehaviour\u003d, applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, networkConnectionEnabled\u003dfalse, chrome\u003d{chromedriverVersion\u003d2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb), userDataDir\u003dC:\\Users\\RAHULG~1\\AppData\\Local\\Temp\\scoped_dir5432_22347}, takesHeapSnapshot\u003dtrue, pageLoadStrategy\u003dnormal, unhandledPromptBehavior\u003d, databaseEnabled\u003dfalse, handlesAlerts\u003dtrue, version\u003d75.0.3770.80, browserConnectionEnabled\u003dfalse, nativeEvents\u003dtrue, locationContextEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 1a60be59c3496899d1699b86b8bc7f14\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:82)\r\n\tat org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:45)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:164)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:703)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:374)\r\n\tat step.StepDef.user_validate_to_the_home_title(StepDef.java:30)\r\n\tat ✽.When User validate to the home title \"ToolsQA – Demo Website to Practice Automation – Demo Website to Practice Automation\"(src/test/resources/features/Interactions.feature:5)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "line": 28,
@@ -485,8 +480,7 @@ formatter.match({
   "location": "StepDef.user_is_already_on_homepage_as(String)"
 });
 formatter.result({
-  "duration": 75953472,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -498,8 +492,7 @@ formatter.match({
   "location": "StepDef.when_user_click_on(String)"
 });
 formatter.result({
-  "duration": 3671402475,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -511,8 +504,7 @@ formatter.match({
   "location": "StepDef.user_navigate_to_the_page_as(String)"
 });
 formatter.result({
-  "duration": 106951,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -528,15 +520,13 @@ formatter.match({
   "location": "StepDef.user_click_on_the_of(String,String)"
 });
 formatter.result({
-  "duration": 5224722994,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "StepDef.user_close_the_browser()"
 });
 formatter.result({
-  "duration": 702877952,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.background({
   "line": 3,
@@ -559,8 +549,9 @@ formatter.match({
   "location": "StepDef.user_navigates_to_the_homepage()"
 });
 formatter.result({
-  "duration": 9529762836,
-  "status": "passed"
+  "duration": 3165477689,
+  "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created exception\nfrom disconnected: received Inspector.detached event\n  (Session info: chrome\u003d75.0.3770.80)\n  (Driver info: chromedriver\u003d2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb),platform\u003dWindows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 2.59 seconds\nBuild info: version: \u00273.5.3\u0027, revision: \u0027a88d25fe6b\u0027, time: \u00272017-08-29T12:42:44.417Z\u0027\nSystem info: host: \u0027LAPTOP-OJ7IS97K\u0027, ip: \u0027192.168.99.1\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027x86\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_131\u0027\nDriver info: driver.version: ChromeDriver\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:215)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:167)\r\n\tat org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$new$0(JsonWireProtocolResponse.java:53)\r\n\tat org.openqa.selenium.remote.JsonWireProtocolResponse.lambda$getResponseFunction$2(JsonWireProtocolResponse.java:91)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$24(ProtocolHandshake.java:359)\r\n\tat java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:193)\r\n\tat java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)\r\n\tat java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:126)\r\n\tat java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:498)\r\n\tat java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)\r\n\tat java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:471)\r\n\tat java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:152)\r\n\tat java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:464)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:362)\r\n\tat org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:82)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:646)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:255)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:237)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:138)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:178)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:167)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:124)\r\n\tat base.BaseTest.initialization(BaseTest.java:62)\r\n\tat step.StepDef.user_navigates_to_the_homepage(StepDef.java:25)\r\n\tat ✽.Given User navigates to the homepage(src/test/resources/features/Interactions.feature:4)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "arguments": [
@@ -572,8 +563,7 @@ formatter.match({
   "location": "StepDef.user_validate_to_the_home_title(String)"
 });
 formatter.result({
-  "duration": 14226769,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 35,
@@ -618,8 +608,7 @@ formatter.match({
   "location": "StepDef.user_is_already_on_homepage_as(String)"
 });
 formatter.result({
-  "duration": 74978965,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -631,8 +620,7 @@ formatter.match({
   "location": "StepDef.when_user_click_on(String)"
 });
 formatter.result({
-  "duration": 3524132544,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -644,8 +632,7 @@ formatter.match({
   "location": "StepDef.user_navigate_to_the_page_as(String)"
 });
 formatter.result({
-  "duration": 201955,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "arguments": [
@@ -661,14 +648,12 @@ formatter.match({
   "location": "StepDef.user_click_on_the_of(String,String)"
 });
 formatter.result({
-  "duration": 115753496,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "StepDef.user_close_the_browser()"
 });
 formatter.result({
-  "duration": 696039908,
-  "status": "passed"
+  "status": "skipped"
 });
 });
