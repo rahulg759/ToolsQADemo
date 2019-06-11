@@ -8,7 +8,7 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 import gherkin.formatter.model.Feature;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/features/Interactions.feature",
+@CucumberOptions(features = "src/test/resources/features/Widgets.feature",
 glue = {"step" },
 format = { "pretty", "html:test-outout", "json:json_output/cucumber.json","junit:junit_xml/cucumber.xml" }, // to generate different types of reporting
 		monochrome = true, // display the console output in a proper readable format

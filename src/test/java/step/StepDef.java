@@ -20,6 +20,7 @@ public class StepDef extends BaseTest {
 	public static WebElement source = null;
 	public static WebElement to = null;
 	public static WebElement element = null;
+	public static WebElement tabElement = null;
 	Actions a;
 	Alert alert;
 
@@ -72,6 +73,12 @@ public class StepDef extends BaseTest {
 		} else if (menuBtn.equals("Tooltip")) {
 			button = driver.findElement(By.xpath(or.getProperty("toolSideBtn")));
 			button.click();
+		} else if (menuBtn.equals("Tabs")) {
+			button = driver.findElement(By.xpath(or.getProperty("tabSideBtn")));
+			button.click();
+		} else if (menuBtn.equals("Spinner")) {
+			button = driver.findElement(By.xpath(or.getProperty("spinnerSideBtn")));
+			button.click();
 		} else {
 			System.out.println("Title is not matched");
 		}
@@ -83,35 +90,49 @@ public class StepDef extends BaseTest {
 		if (text.equals("Sortable")) {
 			title = driver.findElement(By.xpath(or.getProperty("Title")));
 			if (text.equals(title.getText())) {
-				System.out.println("Title has matched");
+				System.out.println("Title has matched" + title.getText());
 			}
 		} else if (text.equals("Selectable")) {
 			title = driver.findElement(By.xpath(or.getProperty("Title")));
 			if (text.equals(title.getText())) {
-				System.out.println("Title has matched");
+				System.out.println("Title has matched" + title.getText());
 			} else if (text.equals("Resizable")) {
 				title = driver.findElement(By.xpath(or.getProperty("Title")));
 				if (text.equals(title.getText())) {
-					System.out.println("Title has matched");
+					System.out.println("Title has matched" + title.getText());
 				} else if (text.equals("Droppable")) {
 					title = driver.findElement(By.xpath(or.getProperty("Title")));
 					if (text.equals(title.getText())) {
-						System.out.println("Title has matched");
+						System.out.println("Title has matched" + title.getText());
 					} else if (text.equals("Draggable")) {
 						title = driver.findElement(By.xpath(or.getProperty("Title")));
 						if (text.equals(title.getText())) {
-							System.out.println("Title has matched");
+							System.out.println("Title has matched" + title.getText());
 						} else if (text.equals("Tooltip and Double click")) {
 							title = driver.findElement(By.xpath(or.getProperty("Title")));
 							if (text.equals(title.getText())) {
-								System.out.println("Title has matched");
-							} else if (text.equals("Tooltip")) {
-								title = driver.findElement(By.xpath(or.getProperty("Title")));
-								if (text.equals(title.getText())) {
-									System.out.println("Title has matched");
-								} else {
-									System.out.println("Title has not matched");
-								}
+								System.out.println("Title has matched" + title.getText());
+							}
+						} else if (text.equals("Tooltip")) {
+							title = driver.findElement(By.xpath(or.getProperty("Title")));
+							if (text.equals(title.getText())) {
+								System.out.println("Title has matched" + title.getText());
+							} else {
+								System.out.println("Title has not matched");
+							}
+						} else if (text.equals("Tabs")) {
+							title = driver.findElement(By.xpath(or.getProperty("Title")));
+							if (text.equals(title.getText())) {
+								System.out.println("Title has matched" + title.getText());
+							} else {
+								System.out.println("Title has not matched");
+							}
+						} else if (text.equals("Spinner")) {
+							title = driver.findElement(By.xpath(or.getProperty("Title")));
+							if (text.equals(title.getText())) {
+								System.out.println("Title has matched" + title.getText());
+							} else {
+								System.out.println("Title has not matched");
 							}
 						}
 					}
@@ -165,12 +186,54 @@ public class StepDef extends BaseTest {
 				a = new Actions(driver).moveToElement(element);
 				a.build().perform();
 				System.out.println(element.getText());
-			} else if (item.equals(driver.findElement(By.xpath(or.getProperty("tooltipBtn"))).getAttribute("title"))) {
-				element = driver.findElement(By.xpath(or.getProperty("tooltipBtn")));
-				System.out.println("Test : " + element.getAttribute("title"));
-				a = new Actions(driver).moveToElement(element);
-				a.build().perform();
-				System.out.println("dsfdfyftgjj : " + element.getText());
+			}
+		} else if (page.equals("Tooltip")) {
+			element = driver.findElement(By.xpath(or.getProperty("tooltipBtn")));
+			a = new Actions(driver).moveToElement(element);
+			a.build().perform();
+			System.out.println("Tooltip text : " + element.getText());
+
+		} else if (page.equals("Tabs")) {
+
+			if (item.equals(driver.findElement(By.xpath(or.getProperty("tab1Btn"))).getText())) {
+				driver.findElement(By.xpath(or.getProperty("tab1Btn"))).click();
+				Thread.sleep(5000);
+				System.out.println(driver.findElement(By.xpath(or.getProperty("tabText1"))).getText());
+
+			} else if (item.equals(driver.findElement(By.xpath(or.getProperty("tab2Btn"))).getText())) {
+				driver.findElement(By.xpath(or.getProperty("tab2Btn"))).click();
+				Thread.sleep(5000);
+				System.out.println(driver.findElement(By.xpath(or.getProperty("tabText2"))).getText());
+			} else if (item.equals(driver.findElement(By.xpath(or.getProperty("tab3Btn"))).getText())) {
+				driver.findElement(By.xpath(or.getProperty("tab3Btn"))).click();
+				Thread.sleep(5000);
+				System.out.println(driver.findElement(By.xpath(or.getProperty("tabText3"))).getText());
+			} else {
+				System.out.println("Condition not matched");
+			}
+
+		} else if (page.equals("Spinner")) {
+			if (item.equals(driver.findElement(By.xpath(or.getProperty("clickIncreamentBtn"))).getAttribute("class"))) {
+				for (int i = 0; i < 7; i++) {
+					driver.findElement(By.xpath(or.getProperty("clickIncreamentBtn"))).click();
+					Thread.sleep(2000);
+				}
+
+				System.out.println(driver.findElement(By.xpath(or.getProperty("textBtn"))).getText());
+			} else if (item
+					.equals(driver.findElement(By.xpath(or.getProperty("clickDecreamentBtn"))).getAttribute("class"))) {
+				driver.findElement(By.xpath(or.getProperty("clickDecreamentBtn"))).click();
+
+				System.out.println(driver.findElement(By.xpath(or.getProperty("textBtn"))).getText());
+			} else if (item.equals(driver.findElement(By.xpath(or.getProperty("toggleBtn"))).getAttribute("id"))) {
+				if (!driver.findElement(By.xpath(or.getProperty("toggleBtn"))).isSelected()) {
+					driver.findElement(By.xpath(or.getProperty("toggleBtn"))).click();
+					System.out.println(
+							"Button : " + driver.findElement(By.xpath(or.getProperty("toggleBtn"))).isEnabled());
+
+				} else {
+					driver.findElement(By.xpath(or.getProperty("toggleBtn"))).click();
+				}
 			}
 		} else {
 			System.out.println("Test is not matched");
