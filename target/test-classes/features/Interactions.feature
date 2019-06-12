@@ -1,3 +1,4 @@
+@interactions
 Feature: This is interaction testcase 
 
 Background: 

@@ -214,7 +214,7 @@ public class StepDef extends BaseTest {
 
 		} else if (page.equals("Spinner")) {
 			if (item.equals(driver.findElement(By.xpath(or.getProperty("clickIncreamentBtn"))).getAttribute("class"))) {
-				for (int i = 0; i < 7; i++) {
+				for (int i = 0; i < 2; i++) {
 					driver.findElement(By.xpath(or.getProperty("clickIncreamentBtn"))).click();
 					Thread.sleep(2000);
 				}
@@ -230,7 +230,6 @@ public class StepDef extends BaseTest {
 					driver.findElement(By.xpath(or.getProperty("toggleBtn"))).click();
 					System.out.println(
 							"Button : " + driver.findElement(By.xpath(or.getProperty("toggleBtn"))).isEnabled());
-
 				} else {
 					driver.findElement(By.xpath(or.getProperty("toggleBtn"))).click();
 				}
