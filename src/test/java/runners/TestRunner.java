@@ -16,7 +16,7 @@ import cucumber.api.junit.Cucumber;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "src/test/resources/features", tags = "@interactions,@widgets", glue = { "step" }, format = { "pretty",
+@CucumberOptions(features = "src/test/resources/features", tags = "@widgets", glue = { "step" }, format = { "pretty",
 		"html:test-outout", "json:json_output/cucumber.json", "junit:junit_xml/cucumber.xml" }, // to generate different
 																								// types of reporting
 		monochrome = true, // display the console output in a proper readable format

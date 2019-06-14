@@ -1,4 +1,4 @@
-@widgets 
+
 Feature: This is widgets testcase 
 
 Background: 
@@ -20,7 +20,7 @@ Scenario: User is click on the Tooltip menu
 	Then user navigate to the page as "Tooltip" 
 	And user click on the "We ask for your age only for statistical purposes." of "Tooltip" 
 	And user close the browser 
-	
+@widgets 	
 Scenario: User is click on the Tabs menu 
 	Given user is already on homepage as "Home" 
 	When when user click on "Tabs" 
