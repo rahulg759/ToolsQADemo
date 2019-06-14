@@ -1,4 +1,3 @@
-
 Feature: This is widgets testcase 
 
 Background: 
